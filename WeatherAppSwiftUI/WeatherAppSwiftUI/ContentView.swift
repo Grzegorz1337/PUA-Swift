@@ -42,7 +42,7 @@ struct ListRow: View{
     var body: some View{
         VStack{
             HStack{
-                Image(systemName: "cloud")
+                Image(systemName: "globe")
                 Text("\(city.displayName), \(city.country)").bold()
             }
         }
