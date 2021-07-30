@@ -13,6 +13,7 @@
 		3B05F25626B3F359008BB5EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B05F25526B3F359008BB5EC /* Preview Assets.xcassets */; };
 		3B05F26126B3F359008BB5EC /* WeatherAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05F26026B3F359008BB5EC /* WeatherAppSwiftUITests.swift */; };
 		3B05F26C26B3F359008BB5EC /* WeatherAppSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05F26B26B3F359008BB5EC /* WeatherAppSwiftUIUITests.swift */; };
+		3B05F27D26B440ED008BB5EC /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05F27C26B440ED008BB5EC /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		3B05F26726B3F359008BB5EC /* WeatherAppSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B05F26B26B3F359008BB5EC /* WeatherAppSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppSwiftUIUITests.swift; sourceTree = "<group>"; };
 		3B05F26D26B3F359008BB5EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B05F27C26B440ED008BB5EC /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3B05F25226B3F359008BB5EC /* Assets.xcassets */,
 				3B05F25726B3F359008BB5EC /* Info.plist */,
 				3B05F25426B3F359008BB5EC /* Preview Content */,
+				3B05F27C26B440ED008BB5EC /* City.swift */,
 			);
 			path = WeatherAppSwiftUI;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				3B05F25126B3F34E008BB5EC /* ContentView.swift in Sources */,
 				3B05F24F26B3F34E008BB5EC /* WeatherAppSwiftUIApp.swift in Sources */,
+				3B05F27D26B440ED008BB5EC /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
