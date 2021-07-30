@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct WeatherIcons{
-    
-    let getIcon: [String:String] = [
+class WeatherIcons{
+    var getIcon: [String:String] = [
         "Clouds": "cloud",
-        "Clear": "sun.min"
+        "Clear": "sun.min",
+        "Rain": "cloud.rain"
     ]
 }

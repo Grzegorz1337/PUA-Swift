@@ -8,10 +8,44 @@
 import SwiftUI
 
 struct CityDetailsView: View {
-    @State var city:City
+    @ObservedObject var weatherData: WeatherAPIController
+    
+    init(city:City) {
+        self.weatherData = WeatherAPIController(city: city)
+    }
+    
+    var icons:WeatherIcons = WeatherIcons()
     
     var body: some View {
-        Text("Welcome \(city.displayName)")
+        VStack{
+            Image(systemName: "\(icons.getIcon[weatherData.weather] ?? "questionmark.circle")")
+                .font(.system(size: 70))
+                .padding()
+            Text("\(weatherData.city.displayName), \(weatherData.city.country)").padding()
+            HStack{
+                Text("Temperatura: ")
+                    .padding()
+                Spacer()
+                Text("\(weatherData.temperature)°C")
+                    .padding()
+            }
+            HStack{
+                Text("Wilgotność: ")
+                    .padding()
+                Spacer()
+                Text("\(weatherData.humidity)%")
+                    .padding()
+            }
+            HStack{
+                Text("Ciśnienie: ")
+                    .padding()
+                Spacer()
+                Text("\(weatherData.pressure)hPa")
+                    .padding()
+            }
+            
+            Spacer()
+        }
     }
 }
 
