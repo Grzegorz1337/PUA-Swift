@@ -23,11 +23,15 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            Header()
-            List{
-                ForEach(cities, content: {city in
-                    ListRow(city: city)
-                })
+            NavigationView{
+                List{
+                    ForEach(cities, content: {city in
+                        NavigationLink(destination: CityDetailsView(city: city)){
+                            ListRow(city: city)
+                            
+                        }
+                    })
+                }.navigationBarTitle("Pogoda w miastach")
             }
         }
     }

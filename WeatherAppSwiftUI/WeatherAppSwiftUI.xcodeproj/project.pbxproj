@@ -14,6 +14,8 @@
 		3B05F26126B3F359008BB5EC /* WeatherAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05F26026B3F359008BB5EC /* WeatherAppSwiftUITests.swift */; };
 		3B05F26C26B3F359008BB5EC /* WeatherAppSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05F26B26B3F359008BB5EC /* WeatherAppSwiftUIUITests.swift */; };
 		3B05F27D26B440ED008BB5EC /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05F27C26B440ED008BB5EC /* City.swift */; };
+		3B05F28D26B44A6B008BB5EC /* CityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05F28C26B44A6B008BB5EC /* CityDetailsView.swift */; };
+		3B05F29226B44E4B008BB5EC /* WeatherIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05F29126B44E4B008BB5EC /* WeatherIcons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3B05F26B26B3F359008BB5EC /* WeatherAppSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppSwiftUIUITests.swift; sourceTree = "<group>"; };
 		3B05F26D26B3F359008BB5EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B05F27C26B440ED008BB5EC /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		3B05F28C26B44A6B008BB5EC /* CityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsView.swift; sourceTree = "<group>"; };
+		3B05F29126B44E4B008BB5EC /* WeatherIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				3B05F24E26B3F34E008BB5EC /* WeatherAppSwiftUIApp.swift */,
 				3B05F25026B3F34E008BB5EC /* ContentView.swift */,
+				3B05F28C26B44A6B008BB5EC /* CityDetailsView.swift */,
+				3B05F29126B44E4B008BB5EC /* WeatherIcons.swift */,
 				3B05F25226B3F359008BB5EC /* Assets.xcassets */,
 				3B05F25726B3F359008BB5EC /* Info.plist */,
 				3B05F25426B3F359008BB5EC /* Preview Content */,
@@ -264,7 +270,9 @@
 			files = (
 				3B05F25126B3F34E008BB5EC /* ContentView.swift in Sources */,
 				3B05F24F26B3F34E008BB5EC /* WeatherAppSwiftUIApp.swift in Sources */,
+				3B05F28D26B44A6B008BB5EC /* CityDetailsView.swift in Sources */,
 				3B05F27D26B440ED008BB5EC /* City.swift in Sources */,
+				3B05F29226B44E4B008BB5EC /* WeatherIcons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
