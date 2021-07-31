@@ -9,40 +9,56 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var hasDot:Bool
+    
     @IBOutlet weak var numberArea: UILabel!
-    @IBAction func digitClicked(_ sender: UIButton){
-        if numberArea.text == "0"{
-            numberArea.text = sender.titleLabel?.text ?? "0"
-        }
-        else{
-            numberArea.text?.append(sender.titleLabel?.text ?? "0")
-        }
-    }
-    @IBAction func addDot(_ sender: Any) {
-        if !hasDot {
-            numberArea.text?.append(".")
-            hasDot = true
-        }
-    }
-    @IBAction func clearNumberArea(_ sender: UIButton){
-        numberArea.text = "0"
-        hasDot = false
+    
+    var numAreaContr: NumberFieldController = NumberFieldController(fieldString: "0")
+    
+    
+    @IBAction func digitClicked(_ sender: UIButton) {
+        numAreaContr.action(action: .ADD_DIGIT, val: sender.titleLabel?.text)
+        numberArea.text = numAreaContr.number
     }
     
-    @IBAction func removeLastElement(_ sender: Any) {
-        if numberArea.text?.last == "." {
-            self.hasDot = false
-        }
-        numberArea.text?.remove(at: (numberArea.text?.index(before: numberArea.text!.endIndex))!)
-        if numberArea.text?.count == 0{
-            numberArea.text?.append("0")
+    @IBAction func addFraction(_ sender: UIButton) {
+        numAreaContr.action(action: .ADD_FRACTION, val: nil)
+        numberArea.text = numAreaContr.number
+        
+    }
+    
+    @IBAction func undoClicked(_ sender: Any) {
+        numAreaContr.action(action: .REMOVE_LAST_DIGIT, val: nil)
+        numberArea.text = numAreaContr.number
+    }
+    
+    @IBAction func cancelClicked(_ sender: Any) {
+        numAreaContr.action(action: .CLEAR_ALL, val: nil)
+        numberArea.text = numAreaContr.number
+    }
+    
+    @IBAction func operatorClicked(_ sender: UIButton) {
+        switch sender.titleLabel?.text {
+        case "+":
+            numAreaContr.action(action: .SUM_EXP, val: nil)
+            numberArea.text = numAreaContr.number
+        case "-":
+            numAreaContr.action(action: .ODD_EXP, val: nil)
+            numberArea.text = numAreaContr.number
+        case "*":
+            numAreaContr.action(action: .MUL_EXP, val: nil)
+            numberArea.text = numAreaContr.number
+        case "/":
+            numAreaContr.action(action: .DIV_EXP, val: nil)
+            numberArea.text = numAreaContr.number
+        case "=":
+            numAreaContr.action(action: .GET_RESULT, val: nil)
+            numberArea.text = numAreaContr.number
+        default:
+            numberArea.text = "ERROR: Bad expression"
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hasDot = false
-        // Do any additional setup after loading the view.
     }
 }
 

@@ -15,6 +15,7 @@
 		3B7F61DB26B4991300375000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F61D926B4991300375000 /* LaunchScreen.storyboard */; };
 		3B7F61E626B4991300375000 /* SimpleCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F61E526B4991300375000 /* SimpleCalculatorTests.swift */; };
 		3B7F61F126B4991300375000 /* SimpleCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F61F026B4991300375000 /* SimpleCalculatorUITests.swift */; };
+		3B7F620A26B5697E00375000 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F620926B5697E00375000 /* TextFieldController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3B7F61EC26B4991300375000 /* SimpleCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7F61F026B4991300375000 /* SimpleCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculatorUITests.swift; sourceTree = "<group>"; };
 		3B7F61F226B4991300375000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7F620926B5697E00375000 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7F61CE26B4990A00375000 /* AppDelegate.swift */,
+				3B7F620926B5697E00375000 /* TextFieldController.swift */,
 				3B7F61D026B4990A00375000 /* SceneDelegate.swift */,
 				3B7F61D226B4990A00375000 /* ViewController.swift */,
 				3B7F61D426B4990A00375000 /* Main.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7F61D326B4990A00375000 /* ViewController.swift in Sources */,
+				3B7F620A26B5697E00375000 /* TextFieldController.swift in Sources */,
 				3B7F61CF26B4990A00375000 /* AppDelegate.swift in Sources */,
 				3B7F61D126B4990A00375000 /* SceneDelegate.swift in Sources */,
 			);
