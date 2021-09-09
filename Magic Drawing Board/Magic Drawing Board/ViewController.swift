@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         self.palette.isHidden = !self.palette.isHidden
     }
     @IBAction func colorPicked(_ sender: UIButton) {
-        self.colorButton.image = UIImage(named: "redColor")
+        self.colorButton.image = sender.imageView?.image
         self.colorButton.tintColor = sender.tintColor
         self.palette.isHidden = true
     }
